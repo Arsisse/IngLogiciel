@@ -6,6 +6,7 @@ import com.indvd00m.ascii.render.api.IContextBuilder;
 import com.indvd00m.ascii.render.api.IElement;
 import com.indvd00m.ascii.render.api.IRender;
 import com.indvd00m.ascii.render.elements.Rectangle;
+import java.io.*;
 
 import java.awt.*;
 
@@ -26,4 +27,3 @@ public class Dessin
 		System.out.println(s);
     }
 }
-

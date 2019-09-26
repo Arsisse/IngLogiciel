@@ -74,9 +74,20 @@ EXECUTION AVEC MAVEN
 
 Ressources
 
-1- 
+1- creation de cfg
 
 2-
+ public static void main( String[] args ) throws IOException {
+        String str;
+        System.out.println( "Hello World!" );
+        ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+        InputStream is = classloader.getResourceAsStream("config.cfg");
+        InputStreamReader streamReader = new InputStreamReader(is);
+        BufferedReader reader = new BufferedReader(streamReader);
+        while((str = reader.readLine()) != null) {
+            System.out.println(str);
+        }
+    }
 
 Executable
 

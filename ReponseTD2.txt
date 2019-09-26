@@ -65,9 +65,12 @@ DEPENDANCES
 
 EXECUTION AVEC MAVEN
 
-1-
+1- mvn exec:java -Dexec.mainClass="fr.unice.miage.Dessin"
 
-2-
+2- 
+<arguments>
+     <argument>arg1</argument>
+</arguments>
 
 Ressources
 
